@@ -1,2 +1,2 @@
-# nicostuden.github.io
+# nicolasstuden.github.io
 Personal academic website
