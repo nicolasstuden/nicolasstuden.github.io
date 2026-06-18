@@ -33,8 +33,22 @@
 
         /* ── Header ── */
         header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
             margin-bottom: 2.5rem;
+        }
+
+        .headshot {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            text-align: left;
         }
 
         header h1 {
@@ -68,16 +82,6 @@
         .header-links .sep {
             margin: 0 0.25rem;
             color: #ccc;
-        }
-
-        /* ── Headshot ── */
-        .headshot {
-            display: block;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin: 1.5rem auto;
         }
 
         /* ── Bio ── */
@@ -203,6 +207,8 @@
         /* ── Responsive ── */
         @media (max-width: 600px) {
             .container { padding: 2rem 1.2rem; }
+            header { flex-direction: column; text-align: center; }
+            .header-text { text-align: center; }
             header h1 { font-size: 1.7rem; }
             .headshot { width: 160px; height: 160px; }
         }
@@ -211,18 +217,18 @@
 <body>
     <div class="container">
         <header>
-            <h1>Nicolas Studen</h1>
-            <div class="subtitle">Ph.D. Candidate · Political Science · Stanford University</div>
-            <div class="header-links">
-                <a href="mailto:nstuden@stanford.edu">nstuden (at) stanford (dot) edu</a>
-                <span class="sep">·</span>
-                <a href="cv.pdf">CV</a>
-                <span class="sep">·</span>
-                <a href="https://scholar.google.com/citations?user=qEhYkAMAAAAJ&hl=en" target="_blank">Google Scholar</a>
-            </div>
-
-            <!-- REPLACE: Add your headshot image as headshot.jpg in the repo -->
             <img src="headshot.jpg" alt="Nicolas Studen" class="headshot">
+            <div class="header-text">
+                <h1>Nicolas Studen</h1>
+                <div class="subtitle">Ph.D. Candidate · Political Science · Stanford University</div>
+                <div class="header-links">
+                    <a href="mailto:nstuden@stanford.edu">nstuden (at) stanford (dot) edu</a>
+                    <span class="sep">·</span>
+                    <a href="cv.pdf">CV</a>
+                    <span class="sep">·</span>
+                    <a href="https://scholar.google.com/citations?user=qEhYkAMAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                </div>
+            </div>
         </header>
 
         <div class="bio">
@@ -248,6 +254,7 @@
 
         <div class="paper">
             <div class="paper-title"><a href="#">Courting Colleagues: Occupational Affinity in Campaign Fundraising</a></div>
+            <div class="paper-meta">2026</div>
             <details>
                 <summary>Abstract</summary>
                 <p>Why do certain professions dominate elected office in the United States? I demonstrate that occupational donor networks provide unequal access to early campaign funds, systematically advantaging candidates from well-networked, high-income professions like law, medicine, and business. Drawing on an original dataset classifying seven million donors and seventy thousand candidates into shared occupational categories across congressional and state legislative elections (2003–2022), I document robust occupational affinity in primary fundraising. Within-race comparisons show that candidates raise an additional 6 percentage points of their individual contributions from co-occupation donors relative to co-partisans in the same contest. This advantage is driven by mobilizing more co-occupation donors, is concentrated in the first 90 days of fundraising, and extends across state and party lines. Only candidates from high-income professions, however, convert occupational affinity into net fundraising advantages in primaries. Together, these findings show how professional networks channel early campaign capital toward a narrow set of professions, reinforcing class- and occupation-based imbalances in political representation.</p>
@@ -256,7 +263,7 @@
 
         <div class="paper">
             <div class="paper-title"><a href="https://dx.doi.org/10.2139/ssrn.5172049" target="_blank">The Electoral Consequences of Ideological Persuasion: Evidence from a Within-Precinct Analysis of US Elections</a></div>
-            <div class="paper-meta">with Adam Bonica and Kasey Rhee</div>
+            <div class="paper-meta">with Adam Bonica and Kasey Rhee · 2025</div>
             <details>
                 <summary>Abstract</summary>
                 <p>Most research on the electoral penalty of candidate ideology relies on between-district or longitudinal comparisons, which are confounded by turnout and ballot composition effects. We employ a within-precinct design using granular precinct-level election data from the MIT Election Data and Science Lab (2016–2022) alongside comprehensive data on candidate ideology. By analyzing within-precinct variation in two-party vote shares for contests simultaneously appearing on the same ballot, we isolate the effect of ideology on vote choice among a fixed electorate. We estimate how voters respond to candidate ideology in terms of vote choice across diverse electoral contexts, holding turnout fixed. A standard deviation change in the midpoint between candidates results in an average vote share penalty of 0.6 percentage points. The effect varies with office type, information availability, incumbency status, and partisan geography. Overall, we find that gains associated with ideological moderation are relatively modest and likely secondary to turnout effects.</p>
@@ -278,10 +285,10 @@
 
         <div class="paper">
             <div class="wip-title">Phantom Pre-Trends Under Compositional Changes in Difference-in-Differences</div>
-            <div class="paper-meta">with Abhi Ramaswamy</div>
+            <div class="paper-meta">with Abhi Ramaswamy · 2026</div>
             <details>
                 <summary>Abstract</summary>
-                <p>We show that in a non-staggered difference-in-differences setting with an unbalanced panel, including unit fixed effects can generate spurious pre-trend violations in canonical event-study specifications — even when parallel trends hold exactly in the raw data. The bias arises because unit fixed effects demean pre-treatment outcomes with respect to units' entire outcome history, which includes post-treatment periods. Therefore when treatment effects are nonzero, the unit-specific mean absorbs the treatment effect and can create the false appearance of pre-trends. We show that this bias requires two conditions operating jointly: (i) an unbalanced panel in which treated units enter at different times (entry cohorts), and (ii) heterogeneous treatment effects across entry cohorts. We derive these results analytically, confirm them via simulation, and propose a matching-based alternative that resolves this issue. We illustrate the empirical relevance of our findings with an application studying the effect of defections in U.S. House speaker elections on campaign fundraising.</p>
+                <p>We show that in a non-staggered difference-in-differences setting with an unbalanced panel, including unit fixed effects can generate spurious pre-trend violations in canonical event-study specifications — even when parallel trends hold exactly in the raw data. The bias arises because unit fixed effects demean pre-treatment outcomes with respect to units' entire outcome history, which includes post-treatment periods. Therefore when treatment effects are nonzero, the unit-specific mean absorbs the treatment effect and can create the false appearance of pre-trends. We show that this bias requires two conditions operating jointly: (i) an unbalanced panel in which treated units enter at different times (entry cohorts), and (ii) heterogeneous treatment effects across entry cohorts. We derive these results analytically, confirm them via simulation, and propose a matching-based alternative that resolves this issue.</p>
             </details>
         </div>
 
