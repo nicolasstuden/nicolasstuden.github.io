@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolas Studen | Ph.D. Candidate in Political Science, Stanford</title>
+    <meta name="author" content="Nicolas Studen">
+    <meta name="description" content="Nicolas Studen is a Ph.D. candidate in Political Science at Stanford University studying campaign finance, occupational networks, and political economy.">
+    <meta name="keywords" content="Nicolas Studen, Stanford, Political Science, campaign finance, political economy, occupational networks, causal inference, machine learning">
+    <meta property="og:title" content="Nicolas Studen | Ph.D. Candidate in Political Science, Stanford">
+    <meta property="og:description" content="Ph.D. candidate studying campaign finance, occupational networks, and political economy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nicolasstuden.github.io/">
+    <link rel="canonical" href="https://nicolasstuden.github.io/">
+    <style>
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #2c2c2c;
+            background: #fdfdfd;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        /* ── Layout ── */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 2rem;
+        }
+
+        /* ── Header ── */
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.01em;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: #666;
+            margin-bottom: 0.8rem;
+        }
+
+        .header-links {
+            font-size: 0.95rem;
+            color: #888;
+        }
+
+        .header-links a {
+            color: #8c1515;
+            text-decoration: none;
+        }
+
+        .header-links a:hover {
+            text-decoration: underline;
+        }
+
+        .header-links .sep {
+            margin: 0 0.25rem;
+            color: #ccc;
+        }
+
+        /* ── Headshot ── */
+        .headshot {
+            display: block;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 1.5rem auto;
+        }
+
+        /* ── Bio ── */
+        .bio {
+            margin-bottom: 2.5rem;
+            text-align: left;
+        }
+
+        /* ── Section Headings ── */
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            border-bottom: 2px solid #e8e8e8;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1.2rem;
+            margin-top: 2.5rem;
+        }
+
+        /* ── Paper Entries ── */
+        .paper {
+            margin-bottom: 1.5rem;
+        }
+
+        .paper-title {
+            font-weight: 600;
+            font-size: 1.02rem;
+        }
+
+        .paper-title a {
+            color: #8c1515;
+            text-decoration: none;
+        }
+
+        .paper-title a:hover {
+            text-decoration: underline;
+        }
+
+        .paper-meta {
+            font-size: 0.92rem;
+            color: #777;
+            margin-top: 0.15rem;
+        }
+
+        .paper-meta em {
+            font-style: italic;
+        }
+
+        /* ── Collapsible Abstract ── */
+        details {
+            margin-top: 0.3rem;
+        }
+
+        details summary {
+            font-size: 0.9rem;
+            color: #8c1515;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        details summary:hover {
+            text-decoration: underline;
+        }
+
+        details p {
+            margin-top: 0.5rem;
+            font-size: 0.93rem;
+            color: #555;
+            line-height: 1.65;
+            padding-left: 0.5rem;
+            border-left: 2px solid #e0e0e0;
+        }
+
+        /* ── Works in Progress (no link) ── */
+        .wip-title {
+            font-weight: 600;
+            font-size: 1.02rem;
+            color: #2c2c2c;
+        }
+
+        /* ── Datasets ── */
+        .datasets-note {
+            color: #555;
+            font-size: 0.97rem;
+        }
+
+        /* ── Contact / Footer ── */
+        .contact {
+            margin-top: 2.5rem;
+            padding-top: 1.2rem;
+            border-top: 2px solid #e8e8e8;
+            font-size: 0.93rem;
+            color: #666;
+            text-align: center;
+        }
+
+        .contact a {
+            color: #8c1515;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .contact .sep {
+            margin: 0 0.3rem;
+            color: #ccc;
+        }
+
+        .updated {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #aaa;
+            text-align: center;
+        }
+
+        /* ── Links ── */
+        a {
+            color: #8c1515;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .container { padding: 2rem 1.2rem; }
+            header h1 { font-size: 1.7rem; }
+            .headshot { width: 160px; height: 160px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nicolas Studen</h1>
+            <div class="subtitle">Ph.D. Candidate · Political Science · Stanford University</div>
+            <div class="header-links">
+                <a href="mailto:nstuden@stanford.edu">nstuden (at) stanford (dot) edu</a>
+                <span class="sep">·</span>
+                <a href="cv.pdf">CV</a>
+                <span class="sep">·</span>
+                <a href="https://scholar.google.com/citations?user=qEhYkAMAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            </div>
+
+            <!-- REPLACE: Add your headshot image as headshot.jpg in the repo -->
+            <img src="headshot.jpg" alt="Nicolas Studen" class="headshot">
+        </header>
+
+        <div class="bio">
+            <p>I am a fourth-year Ph.D. candidate in Political Science at Stanford University, specializing in American politics and political methodology. My research studies how occupational backgrounds, professional networks, and interest groups shape campaign finance and political representation. I collect and link large-scale datasets on campaign contributions and donor behavior, and analyze them using modern causal inference techniques and machine learning.</p>
+        </div>
+
+        <!-- ═══ Publications ═══ -->
+        <h2>Publications</h2>
+
+        <div class="paper">
+            <div class="paper-title"><a href="https://doi.org/10.1017/S0003055425000078" target="_blank">Mass Versus Donor Attitudes on the Importance of Supreme Court Nominations</a></div>
+            <div class="paper-meta">with Brandice Canes-Wrone and Jonathan P. Kastellec · <em>American Political Science Review</em> · 2025</div>
+            <details>
+                <summary>Abstract</summary>
+                <p>While Supreme Court nominations have become increasingly high-salience political events, we know little about their prioritization relative to other issues by core constituency groups. We examine how individual donors and the mass public prioritize nominations, as well as factors they believe presidents should consider when selecting judges. To do so, we constructed original questions for a survey of over 7,000 validated donors and a comparison general population sample. We find donors are substantially more likely to prioritize nominations than their general public co-partisans, particularly Republican donors. Further analysis suggests the prioritization gap is consistent with theories that donors are motivated to move policy toward the ideological extremes. Analyzing policy positions, the largest donor-public difference occurs for diversity in appointments, but for all positions we find smaller differences than for prioritization. Overall, the findings highlight donors' policy priorities may diverge from those of the public even more than policy positions do.</p>
+            </details>
+        </div>
+
+        <!-- Add more publications by copying the block above -->
+
+        <!-- ═══ Working Papers ═══ -->
+        <h2>Working Papers</h2>
+
+        <div class="paper">
+            <div class="paper-title"><a href="#">Courting Colleagues: Occupational Affinity in Campaign Fundraising</a></div>
+            <div class="paper-meta">2026</div>
+            <details>
+                <summary>Abstract</summary>
+                <p>Why do certain professions dominate elected office in the United States? I demonstrate that occupational donor networks provide unequal access to early campaign funds, systematically advantaging candidates from well-networked, high-income professions like law, medicine, and business. Drawing on an original dataset classifying seven million donors and seventy thousand candidates into shared occupational categories across congressional and state legislative elections (2003–2022), I document robust occupational affinity in primary fundraising. Within-race comparisons show that candidates raise an additional 6 percentage points of their individual contributions from co-occupation donors relative to co-partisans in the same contest. This advantage is driven by mobilizing more co-occupation donors, is concentrated in the first 90 days of fundraising, and extends across state and party lines. Only candidates from high-income professions, however, convert occupational affinity into net fundraising advantages in primaries. Together, these findings show how professional networks channel early campaign capital toward a narrow set of professions, reinforcing class- and occupation-based imbalances in political representation.</p>
+            </details>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title"><a href="https://dx.doi.org/10.2139/ssrn.5172049" target="_blank">The Electoral Consequences of Ideological Persuasion: Evidence from a Within-Precinct Analysis of US Elections</a></div>
+            <div class="paper-meta">with Adam Bonica and Kasey Rhee · 2025</div>
+            <details>
+                <summary>Abstract</summary>
+                <p>Most research on the electoral penalty of candidate ideology relies on between-district or longitudinal comparisons, which are confounded by turnout and ballot composition effects. We employ a within-precinct design using granular precinct-level election data from the MIT Election Data and Science Lab (2016–2022) alongside comprehensive data on candidate ideology. By analyzing within-precinct variation in two-party vote shares for contests simultaneously appearing on the same ballot, we isolate the effect of ideology on vote choice among a fixed electorate. We estimate how voters respond to candidate ideology in terms of vote choice across diverse electoral contexts, holding turnout fixed. A standard deviation change in the midpoint between candidates results in an average vote share penalty of 0.6 percentage points. The effect varies with office type, information availability, incumbency status, and partisan geography. Overall, we find that gains associated with ideological moderation are relatively modest and likely secondary to turnout effects.</p>
+            </details>
+        </div>
+
+        <!-- Add more working papers by copying the block above -->
+
+        <!-- ═══ Works in Progress ═══ -->
+        <h2>Works in Progress</h2>
+
+        <div class="paper">
+            <div class="wip-title">Choose Your Fighter: Interest Groups and Legislative Champions</div>
+            <details>
+                <summary>Abstract</summary>
+                <p>How do interest groups pursue favorable policy? Existing research suggests that groups donate to lawmakers to secure short-term access to policymaking. However, this line of work primarily focuses on the relationship between groups and established legislators. An alternate approach, the group-centered theory of parties, emphasizes group support of friendly politicians early in their legislative careers. In this paper, I examine the empirical connection between early group support and downstream legislator behavior. Using a difference-in-differences design, I find legislators who receive substantial contributions from members of a specific profession in their first congressional primary are more inclined to introduce both policy-relevant and group-endorsed legislation throughout their career. This advocacy does not extend to related but competing groups. Coordinated early group support, measured as within-district contribution share, also appears related to legislator behavior. In all, these results provide empirical evidence for a group-centered theory of parties, where interest groups wield their influence early in the electoral process to get loyal "champions" elected to office.</p>
+            </details>
+        </div>
+
+        <div class="paper">
+            <div class="wip-title">Phantom Pre-Trends Under Compositional Changes in Difference-in-Differences</div>
+            <div class="paper-meta">with Abhi Ramaswamy · 2026</div>
+            <details>
+                <summary>Abstract</summary>
+                <p>We show that in a non-staggered difference-in-differences setting with an unbalanced panel, including unit fixed effects can generate spurious pre-trend violations in canonical event-study specifications — even when parallel trends hold exactly in the raw data. The bias arises because unit fixed effects demean pre-treatment outcomes with respect to units' entire outcome history, which includes post-treatment periods. Therefore when treatment effects are nonzero, the unit-specific mean absorbs the treatment effect and can create the false appearance of pre-trends. We show that this bias requires two conditions operating jointly: (i) an unbalanced panel in which treated units enter at different times (entry cohorts), and (ii) heterogeneous treatment effects across entry cohorts. We derive these results analytically, confirm them via simulation, and propose a matching-based alternative that resolves this issue.</p>
+            </details>
+        </div>
+
+        <!-- ═══ Datasets ═══ -->
+        <h2>Datasets</h2>
+
+        <p class="datasets-note"><strong>Occupational Backgrounds of U.S. House and State Legislative Candidates.</strong> An original dataset classifying candidates for the U.S. House of Representatives and state legislatures by their pre-office occupational background. Please <a href="mailto:nstuden@stanford.edu">contact me</a> for more information or access.</p>
+
+        <!-- ═══ Contact ═══ -->
+        <div class="contact">
+            <a href="mailto:nstuden@stanford.edu">nstuden@stanford.edu</a>
+            <span class="sep">·</span>
+            <a href="cv.pdf">CV (PDF)</a>
+            <span class="sep">·</span>
+            <a href="https://scholar.google.com/citations?user=qEhYkAMAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
+
+    </div>
+</body>
+</html>
