@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Studen | Ph.D. Candidate in Political Science, Stanford</title>
     <meta name="author" content="Nicolas Studen">
-    <meta name="description" content="Nicolas Studen is a Ph.D. candidate in Political Science at Stanford University studying campaign finance, occupational networks, and political economy.">
+    <meta name="description" content="Nicolas Studen is a Ph.D. candidate in Political Science at Stanford University, on the 2026–27 academic job market, studying campaign finance, occupational networks, and political economy.">
     <meta name="keywords" content="Nicolas Studen, Stanford, Political Science, campaign finance, political economy, occupational networks, causal inference, machine learning">
     <meta property="og:title" content="Nicolas Studen | Ph.D. Candidate in Political Science, Stanford">
     <meta property="og:description" content="Ph.D. candidate studying campaign finance, occupational networks, and political economy.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nicolasstuden.github.io/">
-    <link rel="canonical" href="https://nicolasstuden.github.io/">
+    <meta property="og:url" content="https://nicolasstuden.com/">
+    <link rel="canonical" href="https://nicolasstuden.com/">
     <meta name="google-site-verification" content="12LxMp4m7he_-2mpEcc_hyaZJKY6qW_uece7wYvLWvI" />
     <style>
         /* ── Reset & Base ── */
@@ -169,6 +169,23 @@
             font-size: 0.97rem;
         }
 
+        /* ── Teaching ── */
+        .teaching-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .teaching-role {
+            font-weight: 600;
+            font-size: 1.02rem;
+        }
+
+        .teaching-list {
+            list-style: none;
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 0.15rem;
+        }
+
         /* ── Contact / Footer ── */
         .contact {
             margin-top: 2.5rem;
@@ -233,7 +250,7 @@
         </header>
 
         <div class="bio">
-            <p>I am a fourth-year Ph.D. candidate in Political Science at Stanford University, specializing in American politics and political methodology. My research studies how occupational backgrounds, professional networks, and interest groups shape campaign finance and political representation. I collect and link large-scale datasets on campaign contributions and donor behavior, and analyze them using modern causal inference techniques and machine learning.</p>
+            <p>I am a fifth-year Ph.D. candidate in Political Science at Stanford University, specializing in American politics and political methodology. My research studies how occupational backgrounds, professional networks, and interest groups shape campaign finance and political representation. I collect and link large-scale datasets on campaign contributions and donor behavior, and analyze them using modern causal inference techniques and machine learning. I am on the 2026–27 academic job market.</p>
         </div>
 
         <!-- ═══ Publications ═══ -->
@@ -254,15 +271,16 @@
         <h2>Working Papers</h2>
 
         <div class="paper">
-            <div class="paper-title"><a href="Courting_Colleagues.pdf">Courting Colleagues: Occupational Affinity in Campaign Fundraising</a></div>
+            <div class="paper-title"><a href="Courting_Colleagues.pdf">Courting Colleagues: Occupational Affinity and Individual Contributions in American Legislative Elections</a></div>
+            <div class="paper-meta"><strong>Job Market Paper</strong></div>
             <details>
                 <summary>Abstract</summary>
-                <p>Why do certain professions dominate elected office in the United States? I demonstrate that occupational donor networks provide unequal access to early campaign funds, systematically advantaging candidates from well-networked, high-income professions like law, medicine, and business. Drawing on an original dataset classifying seven million donors and seventy thousand candidates into shared occupational categories across congressional and state legislative elections (2003–2022), I document robust occupational affinity in primary fundraising. Within-race comparisons show that candidates raise an additional 6 percentage points of their individual contributions from co-occupation donors relative to co-partisans in the same contest. This advantage is driven by mobilizing more co-occupation donors, is concentrated in the first 90 days of fundraising, and extends across state and party lines. Only candidates from high-income professions, however, convert occupational affinity into net fundraising advantages in primaries. Together, these findings show how professional networks channel early campaign capital toward a narrow set of professions, reinforcing class- and occupation-based imbalances in political representation.</p>
+                <p>Why do certain professions dominate elected office in the United States? I demonstrate that occupational donor networks provide unequal access to early campaign funds. To do so, I construct an original dataset that classifies 2.7 million donors and nearly 12,000 candidates into shared occupational categories across congressional and state legislative elections (2003–2022). I find that candidates raise an additional 7 percentage points of their individual contributions from donors who share their occupation, relative to competitors in the same race. This advantage is driven by mobilizing more donors, remains strong in the first 90 days, and extends across state and party lines. Yet only high-income professions, such as law, medicine, and business, convert occupational affinity into a net fundraising advantage. Evidence on mechanisms points to network mobilization and professional identity, not policy investment. Together, these dynamics channel early capital toward a narrow set of professions, compounding their advantages in seeking office.</p>
             </details>
         </div>
 
         <div class="paper">
-            <div class="paper-title"><a href="https://dx.doi.org/10.2139/ssrn.5172049" target="_blank">The Electoral Consequences of Ideological Persuasion: Evidence from a Within-Precinct Analysis of US Elections</a></div>
+            <div class="paper-title"><a href="https://dx.doi.org/10.2139/ssrn.5172049" target="_blank">The Electoral Consequences of Ideological Persuasion: Evidence from a Within-Precinct Analysis of U.S. Elections</a></div>
             <div class="paper-meta">with Adam Bonica and Kasey Rhee</div>
             <details>
                 <summary>Abstract</summary>
@@ -285,17 +303,48 @@
 
         <div class="paper">
             <div class="wip-title">Phantom Pre-Trends Under Compositional Changes in Difference-in-Differences</div>
-            <div class="paper-meta">with Abhi Ramaswamy</div>
+            <div class="paper-meta">with Abhinav Ramaswamy</div>
             <details>
                 <summary>Abstract</summary>
                 <p>We show that in a non-staggered difference-in-differences setting with an unbalanced panel, including unit fixed effects can generate spurious pre-trend violations in canonical event-study specifications — even when parallel trends hold exactly in the raw data. The bias arises because unit fixed effects demean pre-treatment outcomes with respect to units' entire outcome history, which includes post-treatment periods. Therefore when treatment effects are nonzero, the unit-specific mean absorbs the treatment effect and can create the false appearance of pre-trends. We show that this bias requires two conditions operating jointly: (i) an unbalanced panel in which treated units enter at different times (entry cohorts), and (ii) heterogeneous treatment effects across entry cohorts. We derive these results analytically, confirm them via simulation, and propose a matching-based alternative that resolves this issue.</p>
             </details>
         </div>
 
-        <!-- ═══ Datasets ═══ -->
-        <h2>Datasets</h2>
+        <div class="paper">
+            <div class="wip-title">Position-Taking on the Bench: Court-Curbing Bills as Donor Signals in the U.S. Congress</div>
+            <div class="paper-meta">with Tom S. Clark</div>
+        </div>
 
-        <p class="datasets-note"><strong>Occupational Backgrounds of U.S. House and State Legislative Candidates.</strong> An original dataset classifying candidates for the U.S. House of Representatives and state legislatures by their pre-office occupational background. Please <a href="mailto:nstuden@stanford.edu">contact me</a> for more information or access.</p>
+        <!-- ═══ Data ═══ -->
+        <h2>Data</h2>
+
+        <p class="datasets-note"><strong>Occupational Backgrounds of U.S. House and State Legislative Candidates, 2003–2022.</strong> An original dataset classifying candidates for the U.S. House of Representatives and state legislatures by their pre-office occupational background. Please <a href="mailto:nstuden@stanford.edu">contact me</a> for more information or access.</p>
+
+        <!-- ═══ Teaching ═══ -->
+        <h2>Teaching</h2>
+
+        <div class="teaching-group">
+            <div class="teaching-role">Instructor, Stanford University</div>
+            <ul class="teaching-list">
+                <li>PS150B: Machine Learning for Social Scientists (undergraduate), 2026</li>
+            </ul>
+        </div>
+
+        <div class="teaching-group">
+            <div class="teaching-role">Teaching Assistant, Stanford University</div>
+            <ul class="teaching-list">
+                <li>PS450A: Political Methodology I: Regression (graduate), 2025</li>
+                <li>PS150B: Machine Learning for Social Scientists (undergraduate), 2024, 2025</li>
+                <li>PS150A: Data Science for Politics (undergraduate), 2024</li>
+            </ul>
+        </div>
+
+        <div class="teaching-group">
+            <div class="teaching-role">Guest Lecturer, Stanford University</div>
+            <ul class="teaching-list">
+                <li>PS220R: The Presidency (undergraduate), 2025</li>
+            </ul>
+        </div>
 
         <!-- ═══ Contact ═══ -->
         <div class="contact">
